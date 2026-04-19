@@ -1,0 +1,13 @@
+# Actualizar los paquetes del sistema
+sudo apt-get update
+
+# Instalar la herramienta htop para monitorear procesos
+sudo apt-get install htop -y
+
+# Levantar tres servidores backend en distintos puertos
+python3 -m http.server 8080 &
+python3 -m http.server 8081 &
+python3 -m http.server 8082 &
+
+# Abrir htop para observar la distribución en los núcleos
+htop
